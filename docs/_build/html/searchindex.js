@@ -1,1 +1,1 @@
-Search.setIndex({envversion:47,filenames:["index"],objects:{},objnames:{},objtypes:{},terms:{content:0,index:0,modul:0,page:0,search:0},titles:["Welcome to MiniMap&#8217;s documentation!"],titleterms:{document:0,indic:0,minimap:0,tabl:0,welcom:0}})
+Search.setIndex({envversion:47,filenames:["index"],objects:{},objnames:{},objtypes:{},terms:{content:0,doccc:0,index:0,modul:0,page:0,search:0,test:0},titles:["Welcome to MiniMap&#8217;s documentation!"],titleterms:{document:0,indic:0,minimap:0,tabl:0,welcom:0}})
