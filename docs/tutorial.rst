@@ -9,7 +9,7 @@
 Tutorial
 ==================
 
-In the following tutorial, we will guide you step-by-step through different use cases that might occur in Rally, starting with the easy ones and moving towards more complicated cases.
+Coming soon
 
 
 .. toctree::

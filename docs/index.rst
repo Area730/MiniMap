@@ -4,8 +4,8 @@
    contain the root `toctree` directive.
 
 
-Unity 3D MiniMap 32
-===================
+Unity 3D MiniMap
+================
 
 
 Contents
