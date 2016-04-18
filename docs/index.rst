@@ -3,10 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Unity 3D MiniMap 
-===================================
 
-------------
+Unity 3D MiniMap 32
+===================
+
+
 Installation
 ------------
 1. Import the plugin package into your project
@@ -14,7 +15,7 @@ Installation
 3. Set the player transform (other points in the map will be relative to it) in *MapCanvasController* on *Canvas/MiniMap* scene object
 4. Add the *MapMarker* component (*Add Componenent -> MiniMap -> Map marker*) or drag and drop it from *Assets/MiniMap/Scripts* to the objects you want to be shown on the map.
 
---------------
+
 Video tutorial
 --------------
 
@@ -28,7 +29,7 @@ Video tutorial
 | 
 | 
 
-----------------------
+
 Components description
 ----------------------
 
@@ -65,5 +66,4 @@ Next pictures will show how the marker will be shown on the map depending on the
 .. image:: _static/sample_2.png 
 
 * Hide out of radius is **false**, use opacity is **true**: 
-.. image:: _static/sample_3.png  
-
+.. image:: _static/sample_3.png
