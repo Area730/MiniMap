@@ -30,7 +30,8 @@
   
 
   
-    <link rel="top" title="MiniMap 1.1 documentation" href="#"/> 
+    <link rel="top" title="MiniMap 1.1 documentation" href="#"/>
+        <link rel="next" title="Overview" href="overview.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -79,16 +80,11 @@
           
             
             
-                <!-- Local TOC -->
-                <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Unity 3D MiniMap 32</a><ul>
-<li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#video-tutorial">Video tutorial</a></li>
-<li><a class="reference internal" href="#components-description">Components description</a></li>
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
 </ul>
-</li>
-</ul>
-</div>
+
             
           
         </div>
@@ -133,62 +129,21 @@
             
   <div class="section" id="unity-3d-minimap-32">
 <h1>Unity 3D MiniMap 32<a class="headerlink" href="#unity-3d-minimap-32" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li>Import the plugin package into your project</li>
-<li>Drag the MiniMap prefab from <em>Assets/MiniMap/Map_x</em> to your canvas</li>
-<li>Set the player transform (other points in the map will be relative to it) in <em>MapCanvasController</em> on <em>Canvas/MiniMap</em> scene object</li>
-<li>Add the <em>MapMarker</em> component (<em>Add Componenent -&gt; MiniMap -&gt; Map marker</em>) or drag and drop it from <em>Assets/MiniMap/Scripts</em> to the objects you want to be shown on the map.</li>
-</ol>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#video-tutorial">Video tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#components-description">Components description</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a><ul class="simple">
+</ul>
+</li>
+</ul>
 </div>
-<div class="section" id="video-tutorial">
-<h2>Video tutorial<a class="headerlink" href="#video-tutorial" title="Permalink to this headline">¶</a></h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://www.youtube.com/embed/WMvIitdoVrg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-</div><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</div>
-<div class="section" id="components-description">
-<h2>Components description<a class="headerlink" href="#components-description" title="Permalink to this headline">¶</a></h2>
-<p><strong>Map Marker</strong></p>
-<img alt="_images/map_marker.png" src="_images/map_marker.png" />
-<ul class="simple">
-<li><strong>Marker Sprite</strong> – with this image the object will be marked on the map. Sample sprites are included in the package.</li>
-<li><strong>Marker Size</strong> – width and height of the marker.</li>
-<li><strong>Is Active</strong> – if false – the object won’t be shown on the map.</li>
-</ul>
-<p><strong>Map Controller</strong></p>
-<img alt="_images/map_canvas_controller.png" src="_images/map_canvas_controller.png" />
-<ul class="simple">
-<li><strong>Player transform</strong> - is transform of the object that is the midpoint of the map.</li>
-<li><strong>Radar distance</strong> – if the object is within this distance it will be show on the map. If objects are farther than this distance - they will be always on the border of the map or now shown at all, depending on the <em>Hide Out Of Radius</em> value.</li>
-<li><strong>Hide out of radius</strong> - if true - the objects that are farther that <em>Radar distance</em> will be hidden. Otherwise they will stick to map border as long as they are within <em>Max radar distance</em></li>
-<li><strong>Use opacity</strong> - if enabled, objects that are far then <em>Radar distance</em> will become more transparent as distance to player increases (but not more then <em>Max radar distance</em>)</li>
-<li><strong>Max radar distance</strong> - max possible radar distance (used only if <em>Hide out of radius</em> is false)</li>
-<li><strong>Rotate map</strong> - if enabled, the map will rotate and the player arrow will point straight forward, otherwise the map will be fixed and the arrow will show the direction.</li>
-<li><strong>Scale</strong> - scales radar distances</li>
-<li><strong>Minimal Opacity</strong> - minimal opacity for the markers that are farther than radar distance.</li>
-</ul>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p>Next pictures will show how the marker will be shown on the map depending on the options:</p>
-<ul class="simple">
-<li>Hide out of radius is <strong>true</strong>:</li>
-</ul>
-<img alt="_images/sample_1.png" src="_images/sample_1.png" />
-<ul class="simple">
-<li>Hide out of radius is <strong>false</strong>, use opacity is <strong>false</strong>:</li>
-</ul>
-<img alt="_images/sample_2.png" src="_images/sample_2.png" />
-<ul class="simple">
-<li>Hide out of radius is <strong>false</strong>, use opacity is <strong>true</strong>:</li>
-</ul>
-<img alt="_images/sample_3.png" src="_images/sample_3.png" />
 </div>
 </div>
 
@@ -196,6 +151,13 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="overview.html" class="btn btn-neutral float-right" title="Overview" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
   
 
   <hr/>

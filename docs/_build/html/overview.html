@@ -1,0 +1,271 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Overview &mdash; MiniMap 1.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="MiniMap 1.1 documentation" href="index.html"/>
+        <link rel="next" title="Tutorial" href="tutorial.html"/>
+        <link rel="prev" title="Unity 3D MiniMap 32" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MiniMap
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#video-tutorial">Video tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#components-description">Components description</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">MiniMap</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Overview</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/overview.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Import the plugin package into your project</li>
+<li>Drag the MiniMap prefab from <em>Assets/MiniMap/Map_x</em> to your canvas</li>
+<li>Set the player transform (other points in the map will be relative to it) in <em>MapCanvasController</em> on <em>Canvas/MiniMap</em> scene object</li>
+<li>Add the <em>MapMarker</em> component (<em>Add Componenent -&gt; MiniMap -&gt; Map marker</em>) or drag and drop it from <em>Assets/MiniMap/Scripts</em> to the objects you want to be shown on the map.</li>
+</ol>
+</div>
+<div class="section" id="video-tutorial">
+<h2>Video tutorial<a class="headerlink" href="#video-tutorial" title="Permalink to this headline">¶</a></h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="https://www.youtube.com/embed/WMvIitdoVrg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="components-description">
+<h2>Components description<a class="headerlink" href="#components-description" title="Permalink to this headline">¶</a></h2>
+<p><strong>Map Marker</strong></p>
+<img alt="_images/map_marker.png" src="_images/map_marker.png" />
+<ul class="simple">
+<li><strong>Marker Sprite</strong> – with this image the object will be marked on the map. Sample sprites are included in the package.</li>
+<li><strong>Marker Size</strong> – width and height of the marker.</li>
+<li><strong>Is Active</strong> – if false – the object won’t be shown on the map.</li>
+</ul>
+<p><strong>Map Controller</strong></p>
+<img alt="_images/map_canvas_controller.png" src="_images/map_canvas_controller.png" />
+<ul class="simple">
+<li><strong>Player transform</strong> - is transform of the object that is the midpoint of the map.</li>
+<li><strong>Radar distance</strong> – if the object is within this distance it will be show on the map. If objects are farther than this distance - they will be always on the border of the map or now shown at all, depending on the <em>Hide Out Of Radius</em> value.</li>
+<li><strong>Hide out of radius</strong> - if true - the objects that are farther that <em>Radar distance</em> will be hidden. Otherwise they will stick to map border as long as they are within <em>Max radar distance</em></li>
+<li><strong>Use opacity</strong> - if enabled, objects that are far then <em>Radar distance</em> will become more transparent as distance to player increases (but not more then <em>Max radar distance</em>)</li>
+<li><strong>Max radar distance</strong> - max possible radar distance (used only if <em>Hide out of radius</em> is false)</li>
+<li><strong>Rotate map</strong> - if enabled, the map will rotate and the player arrow will point straight forward, otherwise the map will be fixed and the arrow will show the direction.</li>
+<li><strong>Scale</strong> - scales radar distances</li>
+<li><strong>Minimal Opacity</strong> - minimal opacity for the markers that are farther than radar distance.</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p>Next pictures will show how the marker will be shown on the map depending on the options:</p>
+<ul class="simple">
+<li>Hide out of radius is <strong>true</strong>:</li>
+</ul>
+<img alt="_images/sample_1.png" src="_images/sample_1.png" />
+<ul class="simple">
+<li>Hide out of radius is <strong>false</strong>, use opacity is <strong>false</strong>:</li>
+</ul>
+<img alt="_images/sample_2.png" src="_images/sample_2.png" />
+<ul class="simple">
+<li>Hide out of radius is <strong>false</strong>, use opacity is <strong>true</strong>:</li>
+</ul>
+<img alt="_images/sample_3.png" src="_images/sample_3.png" />
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tutorial.html" class="btn btn-neutral float-right" title="Tutorial" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Unity 3D MiniMap 32" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Vladyslav Melnychenko.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

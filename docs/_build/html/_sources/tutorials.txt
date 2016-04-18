@@ -1,0 +1,19 @@
+.. MiniMap documentation master file, created by
+   sphinx-quickstart on Tue Apr 12 02:04:32 2016.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+.. _tutorial:
+
+Rally step-by-step
+==================
+
+In the following tutorial, we will guide you step-by-step through different use cases that might occur in Rally, starting with the easy ones and moving towards more complicated cases.
+
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   tutorial/**
